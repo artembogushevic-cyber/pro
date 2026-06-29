@@ -1,4 +1,4 @@
-document.querySelectorAll('.service-grid article,.tech-grid div,.gallery img,.premium-photo,.hero-visual,.calculator,.review-grid div,.final-box,.contact-card,.map-card').forEach(el=>el.classList.add('reveal'));
+document.querySelectorAll('.service-grid article,.tech-grid div,.compare-grid div,.gallery img,.premium-photo,.hero-visual,.calculator,.review-grid div,.final-box,.contact-card,.map-card').forEach(el=>el.classList.add('reveal'));
 const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show')})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
