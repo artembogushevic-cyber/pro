@@ -34,3 +34,8 @@ document.querySelectorAll('.gallery img').forEach(img=>{
 });
 function closeLightbox(){document.getElementById('lightbox').style.display='none'}
 document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox')closeLightbox()});
+
+
+document.querySelectorAll('.faq-item button').forEach(btn => {
+  btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
+});

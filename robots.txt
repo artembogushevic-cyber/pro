@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://artembogushevic-cyber.github.io/pro/sitemap.xml
