@@ -3,22 +3,24 @@
 @media(max-width:900px){nav{display:none}.nav{height:72px}.phone{font-size:14px;padding:11px 12px}.hero-grid,.split,.calc-wrap,.contact-grid,.final-box,.map-grid,.compare-grid{grid-template-columns:1fr}.hero-grid{min-height:auto;padding:52px 0}.hero{min-height:auto}.hero-visual{transform:none}.hero-metrics,.strip-grid,.service-grid,.tech-line,.gallery,.review-grid{grid-template-columns:1fr}.gallery img{height:245px}h1{letter-spacing:-1px}.final-box{padding:28px}.float-actions{left:18px;right:18px;justify-content:center}}
 
 
-/* V5.1 stable mobile fixes */
+/* V5.2 polishing */
 html, body { max-width: 100%; overflow-x: hidden; }
 img, video { max-width: 100%; height: auto; }
-.faq-list { display: grid; gap: 14px; max-width: 900px; margin: 0 auto; }
-.faq-item { border: 1px solid var(--line); border-radius: 18px; background: #111; overflow: hidden; }
-.faq-item button { width: 100%; background: none; border: 0; color: #fff; text-align: left; font-size: 20px; font-weight: 950; padding: 22px; cursor: pointer; }
-.faq-item p { display: none; color: #ddd; padding: 0 22px 22px; }
-.faq-item.open p { display: block; }
+.faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.faq-grid article { background: linear-gradient(145deg,#171717,#080808); border: 1px solid var(--line); border-radius: 22px; padding: 26px; min-height: 190px; }
+.faq-grid h3 { font-size: 22px; margin-bottom: 12px; color: #fff; }
+.faq-grid p { color: #d6d6d6; font-size: 18px; }
 .footer { padding: 34px 0 90px; background: #050505; border-top: 1px solid var(--line); color: #ddd; }
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; }
 .footer b { font-size: 22px; color: #fff; }
 .footer span { color: var(--orange); }
 .footer p { color: #bbb; margin-top: 8px; }
 @media(max-width:900px){
-  .container { width: calc(100% - 24px); }
+  .faq-grid { grid-template-columns: 1fr; }
+  .faq-grid article { padding: 20px; min-height: auto; }
+  .faq-grid h3 { font-size: 20px; }
+  .faq-grid p { font-size: 16px; }
   .footer-grid { grid-template-columns: 1fr; }
-  .faq-item button { font-size: 18px; padding: 18px; }
-  .faq-item p { padding: 0 18px 18px; }
+  .contacts h2 { font-size: 38px; line-height: 1.02; }
+  .float-actions a { width: 46px; height: 46px; }
 }
