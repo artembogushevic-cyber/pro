@@ -209,3 +209,13 @@ img, video { max-width: 100%; height: auto; }
  .contacts .contact-card.premium-contact .contact-messengers a{font-size:12px;gap:4px}
  .contacts .contact-card.premium-contact .contact-messengers img{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;flex-basis:20px}
 }
+
+/* Multi-page mobile navigation */
+.mobile-sections{display:none;background:#101010;border-bottom:1px solid rgba(255,150,0,.3);position:relative;z-index:95}
+.mobile-sections summary{cursor:pointer;list-style:none;color:#fff;padding:12px 18px;font-size:18px;font-weight:800}
+.mobile-sections summary::-webkit-details-marker{display:none}
+.mobile-sections summary span{font-size:14px;margin-left:8px}
+.mobile-sections-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0 18px 16px}
+.mobile-sections-links a{background:#1d1d1d;border:1px solid #383028;border-radius:10px;padding:13px 12px;color:#fff;font-weight:700;font-size:14px}
+.page-intro{padding-bottom:25px}
+@media(max-width:900px){.mobile-sections{display:block}.header .nav{height:70px}}
