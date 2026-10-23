@@ -148,3 +148,22 @@ img, video { max-width: 100%; height: auto; }
 .float-actions a.float-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
 @media(max-width:900px){.float-actions{left:auto!important;right:12px!important;bottom:calc(14px + env(safe-area-inset-bottom,0px))!important;transform:none!important;gap:9px!important}.float-actions a.float-btn{width:60px!important;height:60px!important}.float-actions a.float-btn svg{width:28px;height:28px}}
 @media(prefers-reduced-motion:reduce){.float-actions a.float-btn{transition:none}}
+
+/* Premium contacts card: scoped so the rest of the site remains unchanged */
+.contacts .premium-contact{display:flex;flex-direction:column;gap:0;padding:clamp(24px,5vw,44px);border:1px solid rgba(234,151,42,.38);border-radius:28px;background:linear-gradient(145deg,#191919 0%,#0b0b0b 78%);box-shadow:0 24px 65px rgba(0,0,0,.3);min-width:0}
+.contacts .premium-contact .contact-kicker{font-size:12px;font-weight:800;letter-spacing:.16em;color:#efa32c;margin-bottom:24px}
+.contacts .premium-contact .contact-kicker span{color:#999}
+.contacts .premium-contact h3{color:#fff;font-size:clamp(25px,4vw,36px);line-height:1.12;letter-spacing:-.035em;margin:0 0 10px}
+.contacts .premium-contact .contact-subtitle{color:#aaa;font-size:14px;line-height:1.5;margin:0 0 26px}
+.contacts .premium-contact .contact-number{display:block;width:fit-content;color:#fff!important;font-size:clamp(21px,4vw,31px);font-weight:800;letter-spacing:-.035em;text-decoration:none;margin:0 0 20px;white-space:nowrap;padding:0;border:0;background:none}
+.contacts .premium-contact .contact-call{display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:13px 15px;border-radius:14px;background:linear-gradient(110deg,#f5ac2c,#e8830b);color:#121212!important;font-weight:800;font-size:15px;text-decoration:none;border:0;margin:0 0 12px}
+.contacts .premium-contact .contact-call span{font-size:22px}
+.contacts .premium-contact .contact-messengers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.contacts .premium-contact .contact-messengers a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:55px;padding:12px 7px;border-radius:13px;color:#fff!important;font-weight:700;font-size:14px;text-decoration:none;border:1px solid #ffffff14;min-width:0}
+.contacts .premium-contact .contact-whatsapp{background:#173d2b}
+.contacts .premium-contact .contact-telegram{background:#153a50}
+.contacts .premium-contact .contact-messengers img{width:24px;height:24px;object-fit:contain;flex:none;margin:0}
+.contacts .premium-contact .contact-region{display:flex;align-items:center;gap:10px;color:#bcbcbc;font-size:13px;line-height:1.4;margin:23px 0 0}
+.contacts .premium-contact .contact-region span{font-size:23px;color:#efa32c}
+.contacts .premium-contact a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media(max-width:420px){.contacts .premium-contact{padding:22px}.contacts .premium-contact .contact-messengers a{font-size:13px;gap:5px}.contacts .premium-contact .contact-messengers img{width:21px;height:21px}}
