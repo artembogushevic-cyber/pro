@@ -219,3 +219,24 @@ img, video { max-width: 100%; height: auto; }
 .mobile-sections-links a{background:#1d1d1d;border:1px solid #383028;border-radius:10px;padding:13px 12px;color:#fff;font-weight:700;font-size:14px}
 .page-intro{padding-bottom:25px}
 @media(max-width:900px){.mobile-sections{display:block}.header .nav{height:70px}}
+
+/* Premium mobile navigation — explicitly hide closed details content */
+.mobile-sections:not([open]) .mobile-sections-links{display:none!important}
+.mobile-sections[open] .mobile-sections-links{display:grid!important}
+@media(max-width:900px){
+ .mobile-sections{display:block;position:sticky;top:70px;z-index:98;background:rgba(10,10,10,.98);border-bottom:1px solid #36302a;box-shadow:0 9px 24px #0005}
+ .mobile-sections summary{display:flex;align-items:center;justify-content:space-between;list-style:none;padding:12px 18px;color:#f5f5f5;font-size:0;cursor:pointer;min-height:48px}
+ .mobile-sections summary::before{content:"МЕНЮ САЙТА";font-size:11px;font-weight:850;letter-spacing:.16em;color:#bfbfbf}
+ .mobile-sections summary::after{content:"☰";font-size:23px;font-weight:400;color:#ffa31a;line-height:1}
+ .mobile-sections[open] summary::after{content:"×";font-size:28px}
+ .mobile-sections summary span{display:none}
+ .mobile-sections-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px 18px 20px;border-top:1px solid #262626}
+ .mobile-sections-links a{display:flex;align-items:center;min-height:52px;background:linear-gradient(140deg,#242424,#161616);border:1px solid #383838;border-radius:12px;padding:12px 14px;color:#fff;font-size:14px;font-weight:750;white-space:normal}
+ .mobile-sections-links a:active{background:#49321c}
+ .float-actions{bottom:calc(12px + env(safe-area-inset-bottom,0px))!important;gap:7px!important}
+ .float-actions a.float-btn{width:48px!important;height:48px!important;border-radius:14px!important}
+ .float-actions a.float-btn svg{width:23px!important;height:23px!important}
+ .float-actions a.float-btn span{font-size:8px!important}
+ .hero .actions{padding-bottom:56px}
+}
+@media(min-width:901px){.mobile-sections{display:none!important}}
