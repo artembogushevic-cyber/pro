@@ -240,3 +240,27 @@ img, video { max-width: 100%; height: auto; }
  .hero .actions{padding-bottom:56px}
 }
 @media(min-width:901px){.mobile-sections{display:none!important}}
+
+/* Unified inner pages, compact mobile first */
+.inner-page-intro{padding:42px 0 28px;background:linear-gradient(135deg,#101010,#090909);border-bottom:1px solid rgba(255,160,30,.15)}
+.inner-page-intro .back-home{display:inline-flex;align-items:center;min-height:40px;color:#d6d6d6;font-size:13px;font-weight:700;margin-bottom:28px}
+.inner-page-intro .back-home:hover{color:#ffa51e}
+.inner-page-kicker{color:#f3a02a;font-size:11px;font-weight:800;letter-spacing:.14em;margin-bottom:12px}
+.inner-page-kicker span{color:#8e8e8e}
+.inner-page-intro h1{font-size:clamp(31px,5vw,55px);line-height:1.1;letter-spacing:-.04em;text-transform:none;overflow-wrap:break-word}
+.inner-page-intro p{font-size:15px;color:#aaa;line-height:1.65;max-width:660px;margin-top:14px}
+.inner-page>.section{padding:55px 0}
+.inner-page .section-head{margin-bottom:28px}
+.inner-page .section-head h2{font-size:clamp(27px,4vw,42px);line-height:1.13;letter-spacing:-.03em}
+.inner-page .section-head p{font-size:clamp(15px,2.5vw,18px);line-height:1.6;margin-top:14px}
+.inner-page .contact-grid,.inner-page .map-grid{gap:26px}
+@media(max-width:700px){
+ .inner-page-intro{padding:22px 0 22px}
+ .inner-page-intro .back-home{margin-bottom:16px}
+ .inner-page-intro h1{font-size:34px}
+ .inner-page>.section{padding:38px 0}
+ .inner-page .section-head{margin-bottom:20px}
+ .inner-page .section-head h2{font-size:28px}
+ .inner-page .contact-grid{display:flex;flex-direction:column;gap:16px}
+ .inner-page .map-grid{display:flex;flex-direction:column;gap:20px}
+}
